@@ -41,16 +41,10 @@ public class ReturnBooleanDemo
       String userInput = scanner.nextLine();
 
       // If user entered '1' then make wasISuccessful = true
-      if (userInput.contentEquals("1"))
-      {
-         wasISuccessful = true;
-      }
-
+      if (userInput.contentEquals("1")) wasISuccessful = true;
+      
       // If user didn't enter '1' then make wasISuccessful = false
-      else if (!userInput.contentEquals("1"))
-      {
-         wasISuccessful = false;
-      }
+      else if (!userInput.contentEquals("1")) wasISuccessful = false;
 
       // Return the value to the calling method
       return wasISuccessful;
